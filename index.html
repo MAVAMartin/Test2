@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="keywords" content="视频聊天网,视频聊天室,视频聊天,多人视频,多人视频聊天,视频交友,视频社区,都秀,doshow" />
+<meta name="description" content="Doshow都秀视频聊天网是免费多人视频社区,提供多人视频聊天,视频聊天室,视频交友,多人视频等，是全国最大的视频聊天网站，是多人视频聊天的首选视频聊天网站。" />
+<title>视频聊天网_多人视频_视频聊天室_视频交友_Doshow都秀视频娱乐社区</title>
+<link rel="Shortcut Icon" href="favicon.ico"> 
+<link href="css/auto.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jQueryRotate.2.2.js"></script>
+<style type="text/css">
+.contentA #www {
+	font-size: 44px;
+	color: #ff6600;
+	padding-top: 605px;
+	padding-left: 500px;
+}
+</style>
+</head>
+<body>
+<div class="all_over2">
+  <div class="over">
+            <div class="contentA">
+           	  <div id="www">5</div>
+      	
+                <div class="LotteryWarp">
+              <div class="LotteryP"><span class="LotteryZ"><img src="images/zhizhen2.png" id="lotteryBtn" style="-webkit-transform: rotate(0deg);"></span></div>
+                    <div class="LotteryZ"></div>
+                </div>
+    </div>
+  </div>
+            
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){
+	
+	var timeOut = function(){  //超时函数
+		$("#lotteryBtn").rotate({
+			angle:11, 
+			duration: 10000, 
+			animateTo: 2160, //这里是设置请求超时后返回的角度，所以应该还是回到最原始的位置，2160是因为我要让它转6圈，就是360*6得来的
+			callback:function(){
+				alert('失败请重新点击')
+			}
+		}); 
+	}; 
+	var rotateFunc = function(awards,angle,text){  //awards:奖项，angle:奖项对应的角度
+		$('#lotteryBtn').stopRotate();
+		$("#lotteryBtn").rotate({
+			angle:11, 
+			duration: 3000, 
+			animateTo: angle+1440, //angle是图片上各奖项对应的角度，1440是我要让指针旋转4圈。所以最后的结束的角度就是这样子^^
+			callback:function(){
+				alert(text)
+			}
+		}); 
+	};
+	
+	$("#lotteryBtn").rotate({ 
+	   bind: 
+		 { 
+			click: function(){
+				var time = [1];  //跟下面if判断用，是否抽奖过
+					time = time[Math.floor(Math.random()*time.length)]; //静态页测试用的
+				if(time==0){
+					timeOut(); //网络超时
+				}
+				if(time==1){
+					var data = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]; //返回的数组 下面1*360/14-11 是商品的所在的大概区域
+						data = data[Math.floor(Math.random()*data.length)];
+					if(data==1){
+						rotateFunc(1,1*360/14-11,'恭喜您抽中的1等奖') 
+					}
+					if(data==2){
+						rotateFunc(2,2*360/14-11,'恭喜您抽中的2等奖')
+					}
+					if(data==3){
+						rotateFunc(3,3*360/14-11,'恭喜您抽中的3等奖')
+					}
+					if(data==4){
+						rotateFunc(4,4*360/14-11,'恭喜您抽中的4等奖')
+					}
+					if(data==5){
+						rotateFunc(5,5*360/14-11,'恭喜您抽中的5等奖')
+					}
+					if(data==6){
+						rotateFunc(6,6*360/14-11,'恭喜您抽中的6等奖')
+					}
+					if(data==7){
+						rotateFunc(7,7*360/14-11,'恭喜您抽中的7等奖')
+					}
+					if(data==8){
+						rotateFunc(8,8*360/14-11,'恭喜您抽中的8等奖')
+					}
+					if(data==9){
+						rotateFunc(9,9*360/14-11,'恭喜您抽中的9等奖')
+					}
+					if(data==10){
+						rotateFunc(10,10*360/14-11,'恭喜您抽中的10等奖')
+					}
+					if(data==11){
+						rotateFunc(11,11*360/14-11,'恭喜您抽中的11等奖')
+					}
+					if(data==12){
+						rotateFunc(12,12*360/14-11,'恭喜您抽中的12等奖')
+					}
+					if(data==13){
+						rotateFunc(13,13*360/14-11,'很遗憾')
+					}
+					if(data==14){
+						rotateFunc(14,14*360/14-11,'恭喜您抽中的14等奖')
+					}
+					
+				}
+			}
+		 } 
+	   
+	});
+	var timeOut2 = function(){  //超时函数
+		$("#lotteryBtn2").rotate({
+			angle:11, 
+			duration: 10000, 
+			animateTo: 2160, //这里是设置请求超时后返回的角度，所以应该还是回到最原始的位置，2160是因为我要让它转6圈，就是360*6得来的
+			callback:function(){
+				alert('失败请重新点击')
+			}
+		}); 
+	}; 
+	var rotateFunc2 = function(awards,angle,text){  //awards:奖项，angle:奖项对应的角度
+		$('#lotteryBtn2').stopRotate();
+		$("#lotteryBtn2").rotate({
+			angle:11, 
+			duration: 3000, 
+			animateTo: angle+1440, //angle是图片上各奖项对应的角度，1440是我要让指针旋转4圈。所以最后的结束的角度就是这样子^^
+			callback:function(){
+				alert(text)
+			}
+		}); 
+	};
+	
+	$("#lotteryBtn2").rotate({ 
+	   bind: 
+		 { 
+			click: function(){
+				var time = [1];  //跟下面if判断用，是否抽奖过
+					time = time[Math.floor(Math.random()*time.length)]; //静态页测试用的
+				if(time==0){
+					timeOut2(); //网络超时
+				}
+				if(time==1){
+					var data = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]; //返回的数组 下面1*360/14-11 是商品的所在的大概区域
+						data = data[Math.floor(Math.random()*data.length)];
+					if(data==1){
+						rotateFunc2(1,1*360/14-11,'恭喜您抽中的1等奖') 
+					}
+					if(data==2){
+						rotateFunc2(2,2*360/14-11,'恭喜您抽中的2等奖')
+					}
+					if(data==3){
+						rotateFunc2(3,3*360/14-11,'恭喜您抽中的3等奖')
+					}
+					if(data==4){
+						rotateFunc2(4,4*360/14-11,'恭喜您抽中的4等奖')
+					}
+					if(data==5){
+						rotateFunc2(5,5*360/14-11,'恭喜您抽中的5等奖')
+					}
+					if(data==6){
+						rotateFunc2(6,6*360/14-11,'恭喜您抽中的6等奖')
+					}
+					if(data==7){
+						rotateFunc2(7,7*360/14-11,'恭喜您抽中的7等奖')
+					}
+					if(data==8){
+						rotateFunc2(8,8*360/14-11,'恭喜您抽中的8等奖')
+					}
+					if(data==9){
+						rotateFunc2(9,9*360/14-11,'恭喜您抽中的9等奖')
+					}
+					if(data==10){
+						rotateFunc2(10,10*360/14-11,'恭喜您抽中的10等奖')
+					}
+					if(data==11){
+						rotateFunc2(11,11*360/14-11,'恭喜您抽中的11等奖')
+					}
+					if(data==12){
+						rotateFunc2(12,12*360/14-11,'恭喜您抽中的12等奖')
+					}
+					if(data==13){
+						rotateFunc2(13,13*360/14-11,'很遗憾')
+					}
+					if(data==14){
+						rotateFunc2(14,14*360/14-11,'恭喜您抽中的14等奖')
+					}
+					
+				}
+			}
+		 } 
+	   
+	});
+	
+})
+</script>	
+<script type="text/javascript">
+				  var oUl=document.getElementById('infoList');
+				  var aLi=oUl.getElementsByTagName('li');
+				  oUl.innerHTML+=oUl.innerHTML;
+				  var a=0
+				  var iNum=-2;
+				  var iSpeed=3000;
+				  var timer=null
+				  right();
+				  for(var i=0;i<aLi.length;i++){
+					  a=a+aLi[i].offsetWidth
+				  }
+				  
+					oUl.style.width=a+'px';
+				   /*oUl.onmouseover=function(){
+						clearInterval(timer);
+				   }  
+				  oUl.onmouseout=function(){
+					   right();
+				  }  */
+				  function right(){
+					   timer=setInterval(function(){
+							  if(oUl.offsetLeft<=-oUl.offsetWidth/2){
+								  oUl.style.left=0+'px';
+							   }
+								oUl.style.left=oUl.offsetLeft+iNum+'px'
+							   },30)
+					}
+				</script>
+</body>
+</html>

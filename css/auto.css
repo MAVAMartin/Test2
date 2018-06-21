@@ -1,0 +1,136 @@
+﻿body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td{margin:0;padding:0;}
+body,button,input,select,textarea{font:12px/1.5 tahoma,arial,'微软雅黑';color:#393939;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+#ok1 {
+	height: 174px;
+	width: 738px;
+	background-image: url(../images/k1.png);
+	background-size: cover;
+	z-index: 101; 
+	position: fixed;
+    margin:auto;left:0; right:0; top:0; bottom:0;
+    background-repeat: no-repeat;
+}
+#ok1 .mk1 {
+	color: #FFF;
+	font-weight: bold;
+	font-size: 30px;
+	padding-left: 200px;
+	padding-top: 50px;
+}
+#ok2 {
+	height: 174px;
+	width: 738px;
+	background-image: url(../images/k2.png);
+	background-size: cover;
+	z-index: 101; 
+	position: fixed;
+    margin:auto;left:0; right:0; top:0; bottom:0;
+    background-repeat: no-repeat;
+}
+#ok3 {
+	height: 174px;
+	width: 738px;
+	background-image: url(../images/k3.png);
+	background-size: cover;
+	z-index: 101; 
+	position: fixed;
+    margin:auto;left:0; right:0; top:0; bottom:0;
+    background-repeat: no-repeat;
+}
+#ok4 {
+	height: 174px;
+	width: 738px;
+	background-image: url(../images/k4.png);
+	background-size: cover;
+	z-index: 101; 
+	position: fixed;
+    margin:auto;left:0; right:0; top:0; bottom:0;
+    background-repeat: no-repeat;
+}
+
+.font1 {
+	color: #F00;
+	font-size: 40px;
+}
+a{
+	color:#444;
+	text-decoration:underline;
+}
+a:hover{
+	color: #da0026;
+}
+img{border:0;}
+li{list-style:None;}
+button,input,select,textarea{font-size:100%;}
+table{border-collapse:collapse;border-spacing:0;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+
+
+.all_over2{
+	height:1740px;
+	width:100%;
+	/* background-size: cover; */
+	background-size: 100% 100%;
+	background-image: url(../images/bj.png);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+.over{
+	width:720px;
+	margin:0 auto;
+	position:relative;
+}
+
+.contentA{
+    top: 233px;
+	height:1526px;
+	position:relative;
+}
+.contentA .LotteryWarp{
+	width:645px;
+	height:648px;
+	position:absolute;
+	left:35px;
+	top:697px;
+}
+.contentA .LotteryWarp .LotteryP{
+	width:645px;
+	height:648px;
+	background:url(../images/zhuanpan2.png) no-repeat;
+}
+.contentA .LotteryWarp .LotteryZ img{
+	position: absolute;
+	left:193px;
+	top:191px;
+	cursor:pointer;
+	width: 260px;
+	height: 260px;
+}
+.contentB{
+	position:relative;
+}
+.contentB .LotteryWarp{
+	width:588px;
+	height:973px;
+	position:absolute;
+	left:346px;
+	top:276px;
+}
+.contentB .LotteryWarp .LotteryP{
+	width:380px;
+	height:973px;
+	background:url(../images/zhuanpan2.png) no-repeat;
+}
+.contentB .LotteryWarp .LotteryZ{
+	width:260px;
+	height:260px;
+	position:absolute;
+	left:188px;
+	top:193px;
+	outline: none;
+}
+.contentB .LotteryWarp .LotteryZ img{position: absolute; left:0; top:0; cursor:pointer;}
